@@ -17,12 +17,9 @@ export interface Month {
 
 export interface Day {
     id: string;
-    month: string;
+    date: string;
     revenue: number;
     expenses: number;
-    nonOperationalExpenses: number;
-    operationalExpenses: number;
-
 }
 
 
@@ -37,6 +34,7 @@ export interface GetKpisResponse {
     totalExpenses:number;
     expensesByCategory: ExpensesByCategory;
     monthlyData: Array<Month>;
+    dailyData: Array<Day>;
 
 
 
